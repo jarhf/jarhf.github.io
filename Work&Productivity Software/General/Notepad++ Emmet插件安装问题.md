@@ -1,5 +1,7 @@
 #Notepad++ Emmet插件在win10下安装后无效的问题
-使用Expand Abbreviation会弹出python script错误，解决办法：
+
+> 使用Expand Abbreviation会弹出python script错误，解决办法：
+
 1. 先卸载安装Emmet时自动安装的Python Script插件。
 2. 从https://sourceforge.net/projects/npppythonscript下载安装python script。
 我安装有个奇怪的问题，默认安装路径C:\Program Files (x86)\notepad++,怎么都改不成Program Files,但是改成其他目录就行。
