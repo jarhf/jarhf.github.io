@@ -16,3 +16,5 @@ When installed on a guest operating system, VirtualBox Guest Additions provide t
 
 ## Support Guest Operating Systems
 No support Mac OS X
+
+> http://www.virtuatopia.com/index.php/Understanding_and_Installing_VirtualBox_Guest_Additions
