@@ -6,10 +6,11 @@ things entered into the command line.
 ```
 nano .inputrc
 ```
-2. Paste in the following three rules on unique lines:
-set completion-ignore-case on
-set show-all-if-ambiguous on
-TAB: menu-complete
+2. Paste in the following three rules on unique lines:  
+>
+set completion-ignore-case on  
+set show-all-if-ambiguous on  
+TAB: menu-complete  
 
 3. Hit Control+O to save changes to .inputrc followed by Control+X to quit.
 
