@@ -6,7 +6,7 @@
 > You can search Vagrant boxes on https://atlas.hashicorp.com/boxes/search.
 
 
-** change default boxes download save folder **
+**change default boxes download save folder**
 
  ```
  //need windows Command Prompt (Admin)
