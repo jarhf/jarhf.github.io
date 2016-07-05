@@ -4,3 +4,11 @@
 3. After install VirtualBox and Vagrant, run cmd : 
 4. `vagrant init jhcook/osx-elcapitan-10.11; vagrant up --provider virtualbox` to install OS X in vagrant.  
 > You can search Vagrant boxes on https://atlas.hashicorp.com/boxes/search.
+
+
+** change default boxes download save folder **
+
+ ```
+ //need windows Command Prompt (Admin)
+ setx /M VAGRANT_HOME D:\ProgramData\.vagrant.d
+ ```
