@@ -13,11 +13,11 @@ public string ShortcutKeyDisplay
   string str = "";
   if ((this.ShortcutKey & Keys.Control) == Keys.Control) str += "Ctrl+";  //设置快捷键的时候使用 Keys.ControlKey | 
   if ((this.ShortcutKey & Keys.Shift) == Keys.Shift) str += "Shift+";
-  if ((this.ShortcutKey & Keys.Alt) == Keys.Alt) str += "Alt";
+  if ((this.ShortcutKey & Keys.Alt) == Keys.Alt) str += "Alt+";
   Keys keyCode = this.ShortcutKey & Keys.KeyCode;
   if (Enum.IsDefined(typeof(Keys), (int)keyCode))
   {
-    str += "+ " + keyCode.ToString();
+    str += keyCode.ToString();
   }
   return str;
 }
