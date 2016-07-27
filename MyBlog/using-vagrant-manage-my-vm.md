@@ -22,4 +22,4 @@
 * vagrant box list  
 * 启动： vagrant up  
 * 关闭： vagrant halt
-* 重置： vagrant destroy <Win7_x86>
+* 重置： vagrant destroy [Win7_x86]
