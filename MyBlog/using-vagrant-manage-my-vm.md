@@ -12,3 +12,14 @@
  //need windows Command Prompt (Admin)
  setx /M VAGRANT_HOME D:\ProgramData\.vagrant.d
  ```
+
+## Useful cmd
+
+*. 改变默认的box存储路径：setx VAGRANT_HOME D:\ProgramData\Vagrant\.vagrant.d /m  (需要admin)
+*. 安装box  ： vagrant box add Win7_x86 http://aka.ms/vagrant-win7-ie11
+*. 初始化：vagrant init Win7_x86     (建议先mkdir一个Win7文件夹，再初始化到该目录下)
+*. 查看全局:  vagrant global-status
+*. vagrant box list
+*. 启动： vagrant up
+*. 关闭： vagrant halt
+*. 重置： vagrant destroy <Win7_x86>
