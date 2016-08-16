@@ -1,4 +1,4 @@
-# Determining which parts of a file have changed[edit]
+# Determining which parts of a file have changed
   The rsync utility uses an algorithm invented by Australian computer programmer Andrew Tridgell for efficiently transmitting a structure  
 (such as a file) across a communications link when the receiving computer already has a similar, but not identical, version of the same  
 structure.  
@@ -19,3 +19,5 @@ when compressed, and thus the entire file will need to be transferred. Some comp
 local changes in the compressed file.
   Rsync supports other key features that aid significantly in data transfers or backup. They include compression and decompression of  
 data block by block using zlib, and support for protocols such as ssh and stunnel.
+
+>[https://en.wikipedia.org/wiki/Rsync](https://en.wikipedia.org/wiki/Rsync)
