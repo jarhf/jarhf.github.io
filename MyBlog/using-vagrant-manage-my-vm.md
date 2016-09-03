@@ -25,5 +25,5 @@ setx VAGRANT_HOME D:\ProgramData\Vagrant\.vagrant.d /m  (需要admin)
 * 查看全局:  `vagrant global-status  `
 * 查看所有boxes：`vagrant box list  `
 * 启动： `vagrant up `, 需要先cd到指定 init目录下。
-* 关闭： vagrant halt
-* 重置： vagrant destroy <Win7_x86>
+* 关闭： `vagrant halt`
+* 重置： `vagrant destroy <Win7_x86>`
