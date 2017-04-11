@@ -1,4 +1,9 @@
+C# 程序遇到如下异常的解决办法
+```
+Exception has been thrown by the target of an invocation. ---> System.InvalidOperationException: This implementation is not part of the Windows Platform FIPS validated cryptographic algorithms
+```
 
+>最简单就是不用Md5，改用SHA1算法
 
 # regedit
 
