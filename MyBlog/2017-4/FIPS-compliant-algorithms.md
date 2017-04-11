@@ -45,6 +45,10 @@ Note: The Federal Information Processing Standard (FIPS) 140 is a security imple
 cryptographic software. FIPS 140 validated software is required by the U.S. Government and requested by other prominent 
 institutions.
 
+
+>http://blog.aggregatedintelligence.com/2007/10/fips-validated-cryptographic-algorithms.html
+
+
 # FIPS compliant Algorithms:
 
 ## Hash algorithms
