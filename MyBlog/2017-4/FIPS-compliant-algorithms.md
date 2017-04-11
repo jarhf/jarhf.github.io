@@ -1,3 +1,5 @@
+
+
 # regedit
 
 ```
@@ -7,6 +9,7 @@
 ```
 
 # secpol.msc
+
 
 ```
 Security Settings -> Local Policies -> Security Options -> 
