@@ -1,10 +1,10 @@
-#Notepad++ Emmet²å¼þÔÚwin10ÏÂ°²×°ºóÎÞÐ§µÄÎÊÌâ
+#Notepad++ Emmetæ’ä»¶åœ¨win10ä¸‹å®‰è£…åŽæ— æ•ˆçš„é—®é¢˜
 
-> Ê¹ÓÃExpand Abbreviation»áµ¯³öpython script´íÎó£¬½â¾ö°ì·¨£º
+> ä½¿ç”¨Expand Abbreviationä¼šå¼¹å‡ºpython scripté”™è¯¯ï¼Œè§£å†³åŠžæ³•ï¼š
 
-1. ÏÈÐ¶ÔØ°²×°EmmetÊ±×Ô¶¯°²×°µÄPython Script²å¼þ¡£
-2. ´Óhttps://sourceforge.net/projects/npppythonscriptÏÂÔØ°²×°python script¡£
-ÎÒ°²×°ÓÐ¸öÆæ¹ÖµÄÎÊÌâ£¬Ä¬ÈÏ°²×°Â·¾¶C:\Program Files (x86)\notepad++,ÔõÃ´¶¼¸Ä²»³ÉProgram Files,µ«ÊÇ¸Ä³ÉÆäËûÄ¿Â¼¾ÍÐÐ¡£
-ÓÚÊÇÖ»ºÃÏÈ°²×°ÔÚx86Ä¿Â¼ÏÂ£¨¿ÉÄÜËû¼ì²âµ½ÎÒµÄnotepadÊÇ32Î»µÄ£©£¬ÓÉÓÚÎÒµÄnotepad++ÊÇ°²×°ÔÚProgram FilesÄ¿Â¼ÏÂ£¬»áÕÒ²»µ½python script²å¼þ£¬°Ñx86ÏÂµÄpython script¼ôÇÐ¹ýÈ¥¾ÍºÃÁË¡£
-3. EmmetÄ¬ÈÏ¿ì½Ý¼ü²»ÊÇTab£¬½¨ÒéÐÞ¸Ä³ÉTab
+1. å…ˆå¸è½½å®‰è£…Emmetæ—¶è‡ªåŠ¨å®‰è£…çš„Python Scriptæ’ä»¶ã€‚
+2. ä»Žhttps://sourceforge.net/projects/npppythonscriptä¸‹è½½å®‰è£…python scriptã€‚
+æˆ‘å®‰è£…æœ‰ä¸ªå¥‡æ€ªçš„é—®é¢˜ï¼Œé»˜è®¤å®‰è£…è·¯å¾„C:\Program Files (x86)\notepad++,æ€Žä¹ˆéƒ½æ”¹ä¸æˆProgram Files,ä½†æ˜¯æ”¹æˆå…¶ä»–ç›®å½•å°±è¡Œã€‚
+äºŽæ˜¯åªå¥½å…ˆå®‰è£…åœ¨x86ç›®å½•ä¸‹ï¼ˆå¯èƒ½ä»–æ£€æµ‹åˆ°æˆ‘çš„notepadæ˜¯32ä½çš„ï¼‰ï¼Œç”±äºŽæˆ‘çš„notepad++æ˜¯å®‰è£…åœ¨Program Filesç›®å½•ä¸‹ï¼Œä¼šæ‰¾ä¸åˆ°python scriptæ’ä»¶ï¼ŒæŠŠx86ä¸‹çš„python scriptå‰ªåˆ‡è¿‡åŽ»å°±å¥½äº†ã€‚
+3. Emmeté»˜è®¤å¿«æ·é”®ä¸æ˜¯Tabï¼Œå»ºè®®ä¿®æ”¹æˆTab
  Settings=>Shortcut mapper=>Plugin commands=>Expand abbreviation
