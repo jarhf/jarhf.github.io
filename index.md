@@ -12,6 +12,9 @@ awesome
 [github中文扫盲](http://www.worldhello.net/gotgithub/)  
 [github pages扫盲帖](http://blog.csdn.net/renfufei/article/details/37725057/)  
 
+# 资源
+前端模板 :
+(https://github.com/BlackrockDigital)
 
 # 收藏博客：
-[http://beginor.github.io][http://beginor.github.io]
+(http://beginor.github.io)
