@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greedy Snake Game</title>
+    <style>
+        #game-board {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .snake-body {
+            width: 20px;
+            height: 20px;
+            background-color: green;
+            position: absolute;
+        }
+        #food {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>Greedy Snake Game</h1>
+    <div id="game-board"></div>
+
+    <script>
+        var gameBoard = document.getElementById("game-board");
+        var snakeBody = [];
+        var food = createFood();
+        var direction = "right";
+        var gameOver = false;
+
+        function createSnakePart(x, y) {
+            var snakePart = document.createElement("div");
+            snakePart.classList.add("snake-body");
+            snakePart.style.top = `${y}px`;
+            snakePart.style.left = `${x}px`;
+            gameBoard.appendChild(snakePart);
+            return snakePart;
+        }
+
+        function moveSnake() {
+            if (gameOver) return;
+
+            var head = snakeBody[0];
+            var top = parseInt(head.style.top);
+            var left = parseInt(head.style.left);
+
+            switch (direction) {
+                case "up":
+                    top -= 20;
+                    break;
+                case "down":
+                    top += 20;
+                    break;
+                case "left":
+                    left -= 20;
+                    break;
+                case "right":
+                    left += 20;
+                    break;
+            }
+
+            if (top < 0 || top >= gameBoard.clientHeight || left < 0 || left >= gameBoard.clientWidth) {
+                handleGameOver();
+                return;
+            }
+
+            var newHead = createSnakePart(left, top);
+            snakeBody.unshift(newHead);
+
+            if (left === food.left && top === food.top) {
+                gameBoard.removeChild(food.element);
+                food = createFood();
+            } else {
+                var tail = snakeBody.pop();
+                gameBoard.removeChild(tail);
+            }
+
+            if (!isUniquePosition(left, top)) {
+                handleGameOver();
+            }
+        }
+
+        function isUniquePosition(x, y) {
+            for (var i = 1; i < snakeBody.length; i++) {
+                var part = snakeBody[i];
+                if (parseInt(part.style.left) === x && parseInt(part.style.top) === y) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function createFood() {
+            var left = Math.floor(Math.random() * (gameBoard.clientWidth / 20)) * 20;
+            var top = Math.floor(Math.random() * (gameBoard.clientHeight / 20)) * 20;
+
+            var foodElement = document.createElement("div");
+            foodElement.id = "food";
+            foodElement.style.top = `${top}px`;
+            foodElement.style.left = `${left}px`;
+            gameBoard.appendChild(foodElement);
+
+            return { element: foodElement, left: left, top: top };
+        }
+
+        function handleKeyDown(event) {
+            switch (event.key) {
+                case "ArrowUp":
+                    if (direction !== "down") direction = "up";
+                    break;
+                case "ArrowDown":
+                    if (direction !== "up") direction = "down";
+                    break;
+                case "ArrowLeft":
+                    if (direction !== "right") direction = "left";
+                    break;
+                case "ArrowRight":
+                    if (direction !== "left") direction = "right";
+                    break;
+            }
+        }
+
+        function handleGameOver() {
+            gameOver = true;
+            alert("Game Over!");
+            resetGame();
+        }
+
+        function resetGame() {
+            gameBoard.innerHTML = "";
+            snakeBody = [];
+            food = createFood();
+            direction = "right";
+            gameOver = false;
+            var startingPart = createSnakePart(0, 0);
+            snakeBody.push(startingPart);
+
+            document.addEventListener("keydown", handleKeyDown);
+            setInterval(moveSnake, 150);
+        }
+
+        // Start the game
+        resetGame();
+    </script>
+</body>
+</html>
